@@ -1,0 +1,51 @@
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    text-shadow:none;
+}
+
+/*
+We inherit box-sizing: border-box; from our <html> selector
+Applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(),linear-gradient(110deg, #1681f5, #0e3c6e);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    background-attachment: fixed;
+    letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+p {
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+button{
+    padding: 5px 10px;
+    background:#efefef;
+    border: 1px solid #666;
+    color: black;
+    border-radius: 5px;
+}
